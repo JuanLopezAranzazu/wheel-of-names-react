@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #007bff; /* Azul */
+  --secondary-color: #6c757d; /* Gris */
+  --success-color: #28a745; /* Verde */
+  --danger-color: #dc3545; /* Rojo */
+  --warning-color: #ffc107; /* Amarillo */
+  --info-color: #17a2b8; /* Azul claro */
+  --light-color: #f8f9fa; /* Fondo claro */
+  --dark-color: #343a40; /* Fondo oscuro */
+  --background-color: #f8f9fa; /* Fondo claro */
+  --font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  font-family: var(--font-family);
+  color: var(--dark-color);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+}

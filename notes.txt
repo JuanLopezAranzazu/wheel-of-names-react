@@ -1,0 +1,22 @@
+Comandos para instalar y ejecutar el proyecto
+
+Para usar las librerías y lenguaje de programación
+npm create vite@latest
+
+Para instalar las dependencias
+npm i
+
+Para correr el proyecto en modo desarrollo
+npm run dev
+
+Para construir el proyecto
+npm run build
+
+Librerías externas necesarias
+npm i react-router-dom
+npm i uuid
+
+npm i react-router-dom uuid
+
+Uri local
+http://localhost:5173/
