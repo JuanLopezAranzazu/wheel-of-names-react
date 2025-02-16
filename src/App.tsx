@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./components/Home";
-import Missing from "./components/Missing";
+import Home from "./scenes/Home";
+import Missing from "./scenes/Missing";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { Participant, ParticipantData } from "./types/Participant";
 import { v4 as uuidV4 } from "uuid";

@@ -20,6 +20,10 @@
   flex-direction: column;
 }
 
+.home {
+  flex: 1;
+}
+
 /* media queries */
 @media (max-width: 768px) {
 }
