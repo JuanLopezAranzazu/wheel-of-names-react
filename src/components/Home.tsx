@@ -7,12 +7,16 @@ type HomeProps = {
   participants: Participant[];
   onAddParticipant: (data: ParticipantData) => void;
   onDeleteParticipant: (id: string) => void;
+  sortedParticipants: () => void;
+  shuffleParticipants: () => void;
 };
 
 const Home = ({
   participants,
   onAddParticipant,
   onDeleteParticipant,
+  sortedParticipants,
+  shuffleParticipants,
 }: HomeProps) => {
   return (
     <div className="home">
@@ -28,6 +32,8 @@ const Home = ({
           <ParticipantList
             participants={participants}
             onDeleteParticipant={onDeleteParticipant}
+            sortedParticipants={sortedParticipants}
+            shuffleParticipants={shuffleParticipants}
           />
         </div>
       </div>

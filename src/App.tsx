@@ -27,6 +27,24 @@ function App() {
     });
   };
 
+  // ordenar participantes por nombre
+  const sortedParticipants = () => {
+    setParticipants((prevParticipants) => {
+      const sorted = [...prevParticipants].sort((a, b) =>
+        a.name.localeCompare(b.name)
+      );
+      return sorted;
+    });
+  };
+
+  // ordenar participantes aleatoriamente
+  const shuffleParticipants = () => {
+    setParticipants((prevParticipants) => {
+      const shuffled = [...prevParticipants].sort(() => Math.random() - 0.5);
+      return shuffled;
+    });
+  };
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -37,6 +55,8 @@ function App() {
               participants={participants}
               onAddParticipant={onAddParticipant}
               onDeleteParticipant={onDeleteParticipant}
+              sortedParticipants={sortedParticipants}
+              shuffleParticipants={shuffleParticipants}
             />
           }
         />
